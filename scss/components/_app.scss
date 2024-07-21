@@ -1,0 +1,56 @@
+
+
+.app {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px;
+    background-color: #2c3b6c;
+    color: white;
+    font-family: "Roboto", sans-serif;
+
+    &__heading {
+        font-size: 35px;
+    }
+
+    &__count {
+        font-size: 30px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__img-coin {
+        width: 40px;
+        pointer-events: none;
+    }
+
+    &__target {
+        width: 200px;
+        border-radius: 50px;
+
+        overflow: hidden;
+        cursor: pointer;
+
+        &:active {
+            scale: 0.98;
+        }
+    }
+
+    &__target-img {
+        width: 100%;
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,17 @@
+.balloon-effect {
+    display: none;
+    
+    color: rgb(255, 196, 0);
+    font-size: 20px;
+    font-weight: 700;
+    animation: balloon 1s 1;
+    position: absolute;
+    user-select: none;
+
+    @keyframes balloon {
+        100% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+    }
+}

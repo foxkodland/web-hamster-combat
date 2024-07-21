@@ -1,0 +1,71 @@
+.app {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+  border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #2c3b6c;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.app__heading {
+  font-size: 35px;
+}
+.app__count {
+  font-size: 30px;
+}
+.app__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.app__img-coin {
+  width: 40px;
+  pointer-events: none;
+}
+.app__target {
+  width: 200px;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.app__target:active {
+  scale: 0.98;
+}
+.app__target-img {
+  width: 100%;
+  pointer-events: none;
+}
+
+.balloon-effect {
+  display: none;
+  color: rgb(255, 196, 0);
+  font-size: 20px;
+  font-weight: 700;
+  animation: balloon 1s 1;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@keyframes balloon {
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1c1f24;
+}/*# sourceMappingURL=style.css.map */
