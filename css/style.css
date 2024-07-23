@@ -36,8 +36,15 @@
   overflow: hidden;
   cursor: pointer;
 }
-.app__target:active {
-  scale: 0.98;
+@media (hover: hover) {
+  .app__target:active {
+    scale: 0.98;
+  }
+}
+@media (hover: none) {
+  .app__target:hover {
+    scale: 0.98;
+  }
 }
 .app__target-img {
   width: 100%;

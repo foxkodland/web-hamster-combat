@@ -44,9 +44,18 @@
         overflow: hidden;
         cursor: pointer;
 
-        &:active {
-            scale: 0.98;
+        @media (hover:hover) {
+            &:active {
+                scale: 0.98;
+            }
         }
+
+        @media (hover:none) {
+            &:hover {
+                scale: 0.98;
+            }
+        }
+
     }
 
     &__target-img {
