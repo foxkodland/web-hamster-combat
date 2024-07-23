@@ -44,16 +44,8 @@
         overflow: hidden;
         cursor: pointer;
 
-        @media (hover:hover) {
-            &:active {
-                scale: 0.98;
-            }
-        }
-
-        @media (hover:none) {
-            &:hover {
-                scale: 0.98;
-            }
+        &:active {
+            scale: 0.98;
         }
 
     }
